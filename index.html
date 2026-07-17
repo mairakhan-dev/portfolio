@@ -71,10 +71,6 @@
         button {
             font-family: var(--font-body);
         }
-        input,
-        textarea {
-            font-family: var(--font-body);
-        }
 
         /* Scroll Progress Bar */
         .scroll-progress {
@@ -732,44 +728,6 @@
             box-shadow: 0 0 8px rgba(139, 92, 246, 0.4);
         }
 
-        /* Testimonials */
-        .testimonial-slider {
-            max-width: 650px;
-            margin: 0 auto;
-            overflow: hidden;
-        }
-        .testimonial-track {
-            display: flex;
-            transition: transform 0.5s var(--transition-smooth);
-        }
-        .testimonial-card {
-            min-width: 100%;
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 24px;
-            padding: 36px;
-            text-align: center;
-        }
-        .slider-dots {
-            display: flex;
-            gap: 8px;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .slider-dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: var(--border);
-            border: none;
-            transition: all 0.3s ease;
-        }
-        .slider-dot.active {
-            background: var(--accent);
-            width: 28px;
-            border-radius: 10px;
-        }
-
         /* Contact */
         .contact-grid {
             display: grid;
@@ -952,20 +910,22 @@
                         <p style="color:var(--text-secondary);line-height:1.8;margin-bottom:16px;">
                             As the <strong style="color:var(--text-primary);">Founder of GrindlyLearn</strong>, I'm on a mission to make learning more accessible, productive, and enjoyable through intelligent software.
                         </p>
+                        <p style="color:var(--text-secondary);line-height:1.8;">
+                            I'm also continuously building my skills through hands‑on JavaScript projects, which you can explore in my growing collection.
+                        </p>
                     </div>
                     <div style="margin-top:20px;">
                         <h4 style="font-family:var(--font-heading);font-weight:700;margin-bottom:16px;">📌 Timeline</h4>
                         <div class="timeline-item"><div><h4>Founder — GrindlyLearn</h4><span>EdTech Startup</span></div></div>
-                        <div class="timeline-item"><div><h4>Leadership & Community Building</h4><span>Tech Community Lead</span></div></div>
-                        <div class="timeline-item"><div><h4>Software Engineering Internships</h4><span>Multiple Companies</span></div></div>
+                        <div class="timeline-item"><div><h4>JavaScript Projects Collection</h4><span>50+ mini‑projects for practice</span></div></div>
                         <div class="timeline-item"><div><h4>Open Source Contributor</h4><span>GitHub Community</span></div></div>
                     </div>
                 </div>
                 <div class="about-stats reveal reveal-delay-2">
-                    <div class="stat-card"><div class="stat-number" data-count="25">0</div><div class="stat-label">Projects Built</div></div>
-                    <div class="stat-card"><div class="stat-number" data-count="30">0</div><div class="stat-label">Technologies Learned</div></div>
-                    <div class="stat-card"><div class="stat-number" data-count="500">0</div><div class="stat-label">GitHub Contributions</div></div>
-                    <div class="stat-card"><div class="stat-number" data-count="2000">0</div><div class="stat-label">Hours Coding</div></div>
+                    <div class="stat-card"><div class="stat-number" data-count="0">0</div><div class="stat-label">Real Projects (counting yours)</div></div>
+                    <div class="stat-card"><div class="stat-number" data-count="0">0</div><div class="stat-label">Technologies You're Adding</div></div>
+                    <div class="stat-card"><div class="stat-number" data-count="0">0</div><div class="stat-label">GitHub Contributions (update me)</div></div>
+                    <div class="stat-card"><div class="stat-number" data-count="0">0</div><div class="stat-label">Hours Coding (update me)</div></div>
                 </div>
             </div>
         </div>
@@ -987,20 +947,14 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects Section – Only real projects -->
     <section id="projects">
         <div class="section-container">
             <p class="section-label reveal">Portfolio</p>
-            <h2 class="section-title reveal">Featured Projects</h2>
-            <div class="project-filters reveal">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="ai">AI</button>
-                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
-                <button class="filter-btn" data-filter="web">Web Dev</button>
-                <button class="filter-btn" data-filter="productivity">Productivity</button>
-                <button class="filter-btn" data-filter="dashboard">Dashboards</button>
+            <h2 class="section-title reveal">My Work</h2>
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Rendered by JavaScript with only truthful data -->
             </div>
-            <div class="projects-grid" id="projectsGrid"></div>
         </div>
     </section>
 
@@ -1011,55 +965,38 @@
             <h2 class="section-title reveal">Experience</h2>
             <div class="exp-timeline" style="margin-top:40px;">
                 <div class="exp-card reveal"><div class="exp-dot"></div><h4>Founder & CEO</h4><span class="exp-date">GrindlyLearn • Present</span><p>Building an AI-powered educational platform.</p></div>
-                <div class="exp-card reveal"><div class="exp-dot"></div><h4>Software Engineering Intern</h4><span class="exp-date">Tech Company • 2024</span><p>Developed full-stack features.</p></div>
-                <div class="exp-card reveal"><div class="exp-dot"></div><h4>Community Lead</h4><span class="exp-date">Developer Community • 2023</span><p>Organized hackathons and workshops.</p></div>
-                <div class="exp-card reveal"><div class="exp-dot"></div><h4>Open Source Contributor</h4><span class="exp-date">GitHub • Ongoing</span><p>Active contributor to developer tools.</p></div>
+                <div class="exp-card reveal"><div class="exp-dot"></div><h4>JavaScript Projects Collection</h4><span class="exp-date">2024 – Ongoing</span><p>Building a public library of 50+ mini‑projects to sharpen my front‑end skills.</p></div>
+                <div class="exp-card reveal"><div class="exp-dot"></div><h4>Open Source Contributor</h4><span class="exp-date">GitHub • Ongoing</span><p>Contributing to developer tools and learning in public.</p></div>
             </div>
         </div>
     </section>
 
-    <!-- Achievements Section -->
+    <!-- Achievements Section (placeholder cards you can fill in) -->
     <section id="achievements">
         <div class="section-container">
             <p class="section-label reveal">Recognition</p>
             <h2 class="section-title reveal">Achievements</h2>
             <div class="achievements-grid" style="margin-top:40px;">
-                <div class="achievement-card reveal"><span class="ach-icon">🏆</span><h4>Hackathon Winner</h4><p>Multiple AI-powered solutions</p></div>
-                <div class="achievement-card reveal"><span class="ach-icon">💼</span><h4>Internships</h4><p>Experience at leading tech companies</p></div>
-                <div class="achievement-card reveal"><span class="ach-icon">🌟</span><h4>Leadership</h4><p>Led teams and communities</p></div>
-                <div class="achievement-card reveal"><span class="ach-icon">📜</span><h4>Certifications</h4><p>AI, Cloud & Development</p></div>
+                <div class="achievement-card reveal"><span class="ach-icon">🏆</span><h4>Your Achievement</h4><p>Add your real hackathon win or award here</p></div>
+                <div class="achievement-card reveal"><span class="ach-icon">💼</span><h4>Your Internship</h4><p>Describe a real internship or role</p></div>
+                <div class="achievement-card reveal"><span class="ach-icon">🌟</span><h4>Your Leadership</h4><p>Community lead, organizer, etc.</p></div>
+                <div class="achievement-card reveal"><span class="ach-icon">📜</span><h4>Your Certification</h4><p>Mention a real certificate</p></div>
             </div>
         </div>
     </section>
 
-    <!-- GitHub Section -->
+    <!-- GitHub Section (you can link to your real profile) -->
     <section id="github">
         <div class="section-container">
             <p class="section-label reveal">Open Source</p>
             <h2 class="section-title reveal">GitHub Activity</h2>
             <div class="github-stats-grid" style="margin-top:40px;">
-                <div class="github-stat-card reveal"><div class="gh-number" data-count="500">0</div><div>Total Contributions</div></div>
-                <div class="github-stat-card reveal"><div class="gh-number" data-count="25">0</div><div>Repositories</div></div>
-                <div class="github-stat-card reveal"><div class="gh-number" data-count="15">0</div><div>Stars Earned</div></div>
-                <div class="github-stat-card reveal"><div class="gh-number" data-count="8">0</div><div>Top Languages</div></div>
+                <div class="github-stat-card reveal"><div class="gh-number" data-count="0">0</div><div>Total Contributions</div></div>
+                <div class="github-stat-card reveal"><div class="gh-number" data-count="0">0</div><div>Repositories</div></div>
+                <div class="github-stat-card reveal"><div class="gh-number" data-count="0">0</div><div>Stars Earned</div></div>
+                <div class="github-stat-card reveal"><div class="gh-number" data-count="0">0</div><div>Top Languages</div></div>
             </div>
             <div class="contribution-graph reveal"><div class="graph-placeholder" id="contributionGraph"></div></div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials">
-        <div class="section-container">
-            <p class="section-label reveal">Testimonials</p>
-            <h2 class="section-title reveal">What People Say</h2>
-            <div class="testimonial-slider reveal">
-                <div class="testimonial-track" id="testimonialTrack">
-                    <div class="testimonial-card"><p>"Maira is an exceptional developer with a keen eye for design."</p><div class="author">Sarah Chen</div><div class="role">Senior Engineer</div></div>
-                    <div class="testimonial-card"><p>"She delivered a world-class product that exceeded expectations."</p><div class="author">James Rodriguez</div><div class="role">Product Manager</div></div>
-                    <div class="testimonial-card"><p>"One of the most talented developers I've collaborated with."</p><div class="author">Emily Park</div><div class="role">CTO</div></div>
-                </div>
-                <div class="slider-dots" id="sliderDots"></div>
-            </div>
         </div>
     </section>
 
@@ -1067,21 +1004,21 @@
     <section id="contact">
         <div class="section-container">
             <p class="section-label reveal">Get In Touch</p>
-            <h2 class="section-title reveal">Let's Work Together</h2>
-            <p class="section-subtitle reveal" style="margin-bottom:24px;">Have a project in mind? I'd love to hear from you.</p>
-            <div class="contact-grid">
+            <h2 class="section-title reveal">Let's Connect</h2>
+            <div class="contact-grid" style="margin-top:40px;">
                 <div class="contact-info-cards reveal">
+                    <!-- No mailto: link – just plain text -->
                     <div class="contact-info-card">
                         <span style="font-size:1.5rem;">📧</span>
                         <div><strong>Email</strong><br><span style="color:var(--text-secondary);font-size:0.85rem;">maira@example.com</span></div>
                     </div>
                     <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-info-card">
                         <span style="font-size:1.5rem;">💼</span>
-                        <div><strong>LinkedIn</strong><br><span style="color:var(--text-secondary);font-size:0.85rem;">linkedin.com/in/mairakhan</span></div>
+                        <div><strong>LinkedIn</strong><br><span style="color:var(--text-secondary);font-size:0.85rem;">Connect with me</span></div>
                     </a>
                     <a href="https://github.com" target="_blank" rel="noopener" class="contact-info-card">
                         <span style="font-size:1.5rem;">🐙</span>
-                        <div><strong>GitHub</strong><br><span style="color:var(--text-secondary);font-size:0.85rem;">github.com/mairakhan</span></div>
+                        <div><strong>GitHub</strong><br><span style="color:var(--text-secondary);font-size:0.85rem;">See my code</span></div>
                     </a>
                 </div>
                 <p style="color:var(--text-secondary); text-align:center; max-width:500px; margin:0 auto;">
@@ -1173,7 +1110,7 @@
                         const progress = Math.min(elapsed / duration, 1);
                         const eased = 1 - Math.pow(1 - progress, 3);
                         const current = Math.round(eased * target);
-                        el.textContent = current.toLocaleString() + '+';
+                        el.textContent = current.toLocaleString();
                         if (progress < 1) requestAnimationFrame(updateCount);
                     }
                     requestAnimationFrame(updateCount);
@@ -1183,23 +1120,31 @@
         }, { threshold: 0.6 });
         countElements.forEach(el => countObserver.observe(el));
 
-        // ============ PROJECTS DATA ============
+        // ============ REAL PROJECTS DATA ============
         const projectsData = [
-            { id: 1, title: 'GrindlyLearn', desc: 'AI-powered educational platform for personalized learning.', category: 'ai', icon: '🎓', tech: ['Next.js', 'AI', 'TypeScript'] },
-            { id: 2, title: 'AI Study Planner', desc: 'Intelligent study schedule generator.', category: 'ai', icon: '📅', tech: ['Python', 'OpenAI API', 'React'] },
-            { id: 3, title: 'AI Flashcard Generator', desc: 'Auto-generate flashcards from any text.', category: 'ai', icon: '🃏', tech: ['OpenAI API', 'Next.js'] },
-            { id: 4, title: 'Expense Tracker', desc: 'Full-stack financial dashboard.', category: 'dashboard', icon: '💰', tech: ['React', 'Firebase'] },
-            { id: 5, title: 'Admin Dashboard', desc: 'Premium admin panel with analytics.', category: 'dashboard', icon: '📊', tech: ['Next.js', 'TypeScript'] },
-            { id: 6, title: 'Netflix UI Clone', desc: 'Pixel-perfect recreation of Netflix.', category: 'web', icon: '🎬', tech: ['React', 'CSS'] },
-            { id: 7, title: 'Spotify UI Clone', desc: 'Beautiful Spotify interface clone.', category: 'web', icon: '🎵', tech: ['React', 'Tailwind'] },
-            { id: 8, title: 'Portfolio Generator', desc: 'Dynamic portfolio builder for devs.', category: 'productivity', icon: '⚡', tech: ['Next.js', 'MDX'] },
-            { id: 9, title: 'Habit Tracker', desc: 'Beautiful habit tracking app.', category: 'productivity', icon: '✅', tech: ['React', 'Supabase'] },
+            {
+                id: 1,
+                title: 'GrindlyLearn',
+                desc: 'AI-powered educational platform. Founder-led product aimed at making learning more accessible and productive.',
+                icon: '🎓',
+                tech: ['Next.js', 'AI', 'TypeScript', 'Supabase'],
+                live: 'https://grindlylearn.com',
+                github: 'https://github.com' // Replace with actual repo if public
+            },
+            {
+                id: 2,
+                title: 'JavaScript Projects Collection',
+                desc: 'A growing library of 50+ mini-projects to practice front-end skills – from games to utilities.',
+                icon: '📁',
+                tech: ['HTML', 'CSS', 'JavaScript'],
+                live: 'https://mairakhan-dev.github.io/javascript-projects/',
+                github: 'https://github.com' // Replace if you have the source repo
+            }
         ];
 
-        function renderProjects(filter = 'all') {
+        function renderProjects() {
             const grid = document.getElementById('projectsGrid');
-            const filtered = filter === 'all' ? projectsData : projectsData.filter(p => p.category === filter);
-            grid.innerHTML = filtered.map(p => `
+            grid.innerHTML = projectsData.map(p => `
                 <div class="project-card reveal">
                     <div class="project-card-image"><span class="project-icon">${p.icon}</span></div>
                     <div class="project-card-body">
@@ -1207,8 +1152,8 @@
                         <p>${p.desc}</p>
                         <div class="project-tech-tags">${p.tech.map(t => `<span class="project-tech-tag">${t}</span>`).join('')}</div>
                         <div class="project-card-links">
-                            <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-ghost" style="font-size:0.75rem;padding:6px 14px;">GitHub ↗</a>
-                            <a href="#" class="btn btn-primary" style="font-size:0.75rem;padding:6px 14px;">Live Demo ↗</a>
+                            <a href="${p.github}" target="_blank" rel="noopener" class="btn btn-ghost" style="font-size:0.75rem;padding:6px 14px;">GitHub ↗</a>
+                            <a href="${p.live}" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:0.75rem;padding:6px 14px;">Live Demo ↗</a>
                         </div>
                     </div>
                 </div>
@@ -1217,43 +1162,14 @@
         }
         renderProjects();
 
-        // Project filters
-        document.querySelectorAll('.filter-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                renderProjects(btn.getAttribute('data-filter'));
-            });
-        });
-
         // ============ CONTRIBUTION GRAPH ============
         const graphContainer = document.getElementById('contributionGraph');
         for (let i = 0; i < 52 * 7; i++) {
             const cell = document.createElement('span');
             cell.classList.add('graph-cell');
-            if (Math.random() > 0.55) cell.classList.add('filled');
+            if (Math.random() > 0.8) cell.classList.add('filled');
             graphContainer.appendChild(cell);
         }
-
-        // ============ TESTIMONIAL SLIDER ============
-        const track = document.getElementById('testimonialTrack');
-        const dotsContainer = document.getElementById('sliderDots');
-        const slides = track.querySelectorAll('.testimonial-card');
-        let currentSlide = 0;
-        slides.forEach((_, i) => {
-            const dot = document.createElement('button');
-            dot.classList.add('slider-dot');
-            if (i === 0) dot.classList.add('active');
-            dot.addEventListener('click', () => goToSlide(i));
-            dotsContainer.appendChild(dot);
-        });
-        const dots = dotsContainer.querySelectorAll('.slider-dot');
-        function goToSlide(index) {
-            currentSlide = index;
-            track.style.transform = `translateX(-${currentSlide * 100}%)`;
-            dots.forEach((d, i) => d.classList.toggle('active', i === index));
-        }
-        setInterval(() => goToSlide((currentSlide + 1) % slides.length), 4000);
 
         // ============ BACK TO TOP ============
         const backToTopBtn = document.getElementById('backToTop');
